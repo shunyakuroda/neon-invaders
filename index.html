@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ネオンインベーダー</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <canvas id="gameCanvas"></canvas>
+      <div id="ui-layer">
+        <div style="display: flex; justify-content: space-between; width: 100%;">
+            <div id="score" class="hud-text">スコア: 0</div>
+            <div id="lives" class="hud-text">ライフ: 3</div>
+        </div>
+      </div>
+      
+      <div id="start-screen" class="active">
+        <h1>ネオンインベーダー</h1>
+        <p style="margin-bottom: 30px; color: #ccc;">矢印キーで移動 • スペースキーで発射</p>
+        <button id="start-btn">ゲーム開始</button>
+      </div>
+
+      <div id="game-over-screen">
+        <h1>ゲームオーバー</h1>
+        <p id="final-score" style="margin-bottom: 30px; font-size: 24px; color: white;">スコア: 0</p>
+        <button id="restart-btn">もう一度プレイ</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
